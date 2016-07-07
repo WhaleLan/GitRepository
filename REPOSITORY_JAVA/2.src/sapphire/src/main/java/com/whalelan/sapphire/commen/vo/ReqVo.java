@@ -1,8 +1,7 @@
 package com.whalelan.sapphire.commen.vo;
 /**
- * ×÷ÎªVOµÄÀà²»ÄÜÒª¹¹Ôìº¯Êı<br>
  * @author Administrator
- *
+ * æ˜ å°„VOï¼Œä¸èƒ½æœ‰æ„é€ å‡½æ•°<br>
  */
 public class ReqVo
 {
