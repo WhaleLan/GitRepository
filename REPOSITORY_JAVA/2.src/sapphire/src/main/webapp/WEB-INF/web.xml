@@ -6,9 +6,14 @@
 	<display-name>sapphire</display-name>
 
 	<!-- spring 上下文配置 -->
-	<!-- <context-param> <param-name>contextConfigLocation</param-name> <param-value>/WEB-INF/configs/spring/applicationContext*.xml</param-value> 
-		</context-param> <listener> <listener-class> org.springframework.web.context.ContextLoaderListener 
-		</listener-class> </listener> -->
+	<context-param> 
+	 	<param-name>contextConfigLocation</param-name> 
+	 	<param-value>/WEB-INF/configs/spring/applicationContext*.xml</param-value> 
+	</context-param> 
+	<listener> 
+		<listener-class> org.springframework.web.context.ContextLoaderListener 
+		</listener-class>
+	</listener> 
 
 	<!-- spring mvc 配置 -->
 	<servlet>
