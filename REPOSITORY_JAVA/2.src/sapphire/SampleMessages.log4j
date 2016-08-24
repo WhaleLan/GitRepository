@@ -1,0 +1,1592 @@
+<log4j:event logger="org.springframework.web.servlet.DispatcherServlet" timestamp="1472049516827" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Initializing servlet 'spring-mvc']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.context.support.StandardServletEnvironment" timestamp="1472049516835" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Adding [servletConfigInitParams] PropertySource with lowest search precedence]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.context.support.StandardServletEnvironment" timestamp="1472049516835" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Adding [servletContextInitParams] PropertySource with lowest search precedence]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.context.support.StandardServletEnvironment" timestamp="1472049516835" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Adding [jndiProperties] PropertySource with lowest search precedence]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.context.support.StandardServletEnvironment" timestamp="1472049516836" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Adding [systemProperties] PropertySource with lowest search precedence]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.context.support.StandardServletEnvironment" timestamp="1472049516836" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Adding [systemEnvironment] PropertySource with lowest search precedence]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.context.support.StandardServletEnvironment" timestamp="1472049516836" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.DispatcherServlet" timestamp="1472049516855" level="INFO" thread="localhost-startStop-1">
+<log4j:message><![CDATA[FrameworkServlet 'spring-mvc': initialization started]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.DispatcherServlet" timestamp="1472049516855" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Servlet with name 'spring-mvc' will try to create custom WebApplicationContext context of class 'org.springframework.web.context.support.XmlWebApplicationContext', using parent context [Root WebApplicationContext: startup date [Wed Aug 24 22:38:36 CST 2016]; root of context hierarchy]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.env.PropertySourcesPropertyResolver" timestamp="1472049516856" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Searching for key 'spring.profiles.active' in [servletConfigInitParams]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.env.PropertySourcesPropertyResolver" timestamp="1472049516857" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Searching for key 'spring.profiles.active' in [servletContextInitParams]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.env.PropertySourcesPropertyResolver" timestamp="1472049516857" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Searching for key 'spring.profiles.active' in [jndiProperties]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.jndi.JndiTemplate" timestamp="1472049516857" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Looking up JNDI object with name [java:comp/env/spring.profiles.active]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.jndi.JndiLocatorDelegate" timestamp="1472049516857" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.jndi.JndiTemplate" timestamp="1472049516858" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Looking up JNDI object with name [spring.profiles.active]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.jndi.JndiPropertySource" timestamp="1472049516858" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.env.PropertySourcesPropertyResolver" timestamp="1472049516858" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Searching for key 'spring.profiles.active' in [systemProperties]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.env.PropertySourcesPropertyResolver" timestamp="1472049516858" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Searching for key 'spring.profiles.active' in [systemEnvironment]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.env.PropertySourcesPropertyResolver" timestamp="1472049516859" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Could not find key 'spring.profiles.active' in any property source. Returning [null]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.env.PropertySourcesPropertyResolver" timestamp="1472049516859" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Searching for key 'spring.profiles.default' in [servletConfigInitParams]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.env.PropertySourcesPropertyResolver" timestamp="1472049516859" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Searching for key 'spring.profiles.default' in [servletContextInitParams]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.env.PropertySourcesPropertyResolver" timestamp="1472049516859" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Searching for key 'spring.profiles.default' in [jndiProperties]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.jndi.JndiTemplate" timestamp="1472049516859" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Looking up JNDI object with name [java:comp/env/spring.profiles.default]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.jndi.JndiLocatorDelegate" timestamp="1472049516860" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.jndi.JndiTemplate" timestamp="1472049516860" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Looking up JNDI object with name [spring.profiles.default]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.jndi.JndiPropertySource" timestamp="1472049516860" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.env.PropertySourcesPropertyResolver" timestamp="1472049516861" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Searching for key 'spring.profiles.default' in [systemProperties]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.env.PropertySourcesPropertyResolver" timestamp="1472049516861" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Searching for key 'spring.profiles.default' in [systemEnvironment]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.env.PropertySourcesPropertyResolver" timestamp="1472049516861" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Could not find key 'spring.profiles.default' in any property source. Returning [null]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.context.support.StandardServletEnvironment" timestamp="1472049516865" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.context.support.StandardServletEnvironment" timestamp="1472049516865" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Replacing [servletConfigInitParams] PropertySource with [servletConfigInitParams]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.context.support.XmlWebApplicationContext" timestamp="1472049516865" level="INFO" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Refreshing WebApplicationContext for namespace 'spring-mvc-servlet': startup date [Wed Aug 24 22:38:36 CST 2016]; parent: Root WebApplicationContext]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.env.StandardEnvironment" timestamp="1472049516868" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Adding [systemProperties] PropertySource with lowest search precedence]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.env.StandardEnvironment" timestamp="1472049516868" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Adding [systemEnvironment] PropertySource with lowest search precedence]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.env.StandardEnvironment" timestamp="1472049516868" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.xml.XmlBeanDefinitionReader" timestamp="1472049516869" level="INFO" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Loading XML bean definitions from ServletContext resource [/WEB-INF/configs/spring/spring-mvc-servlet.xml]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.xml.DefaultDocumentLoader" timestamp="1472049516870" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.xml.PluggableSchemaResolver" timestamp="1472049516872" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Loading schema mappings from [META-INF/spring.schemas]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.xml.PluggableSchemaResolver" timestamp="1472049516882" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Loaded schema mappings: {http://www.springframework.org/schema/cache/spring-cache-4.2.xsd=org/springframework/cache/config/spring-cache-4.2.xsd, http://www.springframework.org/schema/aop/spring-aop-4.1.xsd=org/springframework/aop/config/spring-aop-4.1.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd=org/springframework/web/servlet/config/spring-mvc-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-4.2.xsd, http://www.springframework.org/schema/lang/spring-lang-4.1.xsd=org/springframework/scripting/config/spring-lang-4.1.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd=org/springframework/web/servlet/config/spring-mvc-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-4.2.xsd=org/springframework/beans/factory/xml/spring-beans-4.2.xsd, http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd=org/springframework/oxm/config/spring-oxm-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-4.1.xsd=org/springframework/beans/factory/xml/spring-tool-4.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-4.1.xsd=org/springframework/ejb/config/spring-jee-4.1.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/task/spring-task-4.2.xsd=org/springframework/scheduling/config/spring-task-4.2.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-4.2.xsd, http://www.springframework.org/schema/cache/spring-cache-4.1.xsd=org/springframework/cache/config/spring-cache-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd=org/springframework/web/servlet/config/spring-mvc-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-4.2.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-4.1.xsd=org/springframework/beans/factory/xml/spring-beans-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/task/spring-task-4.1.xsd=org/springframework/scheduling/config/spring-task-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/util/spring-util-4.2.xsd=org/springframework/beans/factory/xml/spring-util-4.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-4.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/oxm/spring-oxm-4.2.xsd=org/springframework/oxm/config/spring-oxm-4.2.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-4.2.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/util/spring-util-4.1.xsd=org/springframework/beans/factory/xml/spring-util-4.1.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-4.2.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/oxm/spring-oxm.xsd=org/springframework/oxm/config/spring-oxm-4.2.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/oxm/spring-oxm-4.1.xsd=org/springframework/oxm/config/spring-oxm-4.1.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-4.2.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/context/spring-context-4.2.xsd=org/springframework/context/config/spring-context-4.2.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/oxm/spring-oxm-3.2.xsd=org/springframework/oxm/config/spring-oxm-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-4.2.xsd=org/springframework/aop/config/spring-aop-4.2.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-4.2.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd=org/springframework/web/servlet/config/spring-mvc-4.2.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/oxm/spring-oxm-4.0.xsd=org/springframework/oxm/config/spring-oxm-4.0.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-4.2.xsd, http://www.springframework.org/schema/lang/spring-lang-4.2.xsd=org/springframework/scripting/config/spring-lang-4.2.xsd, http://www.springframework.org/schema/context/spring-context-4.1.xsd=org/springframework/context/config/spring-context-4.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/oxm/spring-oxm-3.1.xsd=org/springframework/oxm/config/spring-oxm-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-4.2.xsd=org/springframework/beans/factory/xml/spring-tool-4.2.xsd, http://www.springframework.org/schema/jee/spring-jee-4.2.xsd=org/springframework/ejb/config/spring-jee-4.2.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-4.2.xsd}]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.xml.PluggableSchemaResolver" timestamp="1472049516883" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.xml.PluggableSchemaResolver" timestamp="1472049516898" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Found XML schema [http://www.springframework.org/schema/context/spring-context.xsd] in classpath: org/springframework/context/config/spring-context-4.2.xsd]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.xml.PluggableSchemaResolver" timestamp="1472049516901" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Found XML schema [http://www.springframework.org/schema/tool/spring-tool-4.2.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-4.2.xsd]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.xml.PluggableSchemaResolver" timestamp="1472049516904" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Found XML schema [http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd] in classpath: org/springframework/web/servlet/config/spring-mvc-3.0.xsd]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader" timestamp="1472049516908" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Loading bean definitions]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver" timestamp="1472049516910" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/oxm=org.springframework.oxm.config.OxmNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.env.StandardEnvironment" timestamp="1472049516911" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Adding [systemProperties] PropertySource with lowest search precedence]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.env.StandardEnvironment" timestamp="1472049516912" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Adding [systemEnvironment] PropertySource with lowest search precedence]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.env.StandardEnvironment" timestamp="1472049516912" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.context.annotation.ClassPathBeanDefinitionScanner" timestamp="1472049516912" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.context.annotation.ClassPathBeanDefinitionScanner" timestamp="1472049516912" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[JSR-330 'javax.inject.Named' annotation found and supported for component scanning]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.io.support.PathMatchingResourcePatternResolver" timestamp="1472049516913" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Resolved classpath location [com/whalelan/sapphire/] to resources [URL [file:/D:/Git_Repository/REPOSITORY_JAVA/2.src/sapphire/target/classes/com/whalelan/sapphire/]]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.io.support.PathMatchingResourcePatternResolver" timestamp="1472049516913" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Looking for matching resources in directory tree [D:\Git_Repository\REPOSITORY_JAVA\2.src\sapphire\target\classes\com\whalelan\sapphire]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.io.support.PathMatchingResourcePatternResolver" timestamp="1472049516914" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Searching directory [D:\Git_Repository\REPOSITORY_JAVA\2.src\sapphire\target\classes\com\whalelan\sapphire] for files matching pattern [D:/Git_Repository/REPOSITORY_JAVA/2.src/sapphire/target/classes/com/whalelan/sapphire/**/*.class]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.io.support.PathMatchingResourcePatternResolver" timestamp="1472049516914" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Searching directory [D:\Git_Repository\REPOSITORY_JAVA\2.src\sapphire\target\classes\com\whalelan\sapphire\commen] for files matching pattern [D:/Git_Repository/REPOSITORY_JAVA/2.src/sapphire/target/classes/com/whalelan/sapphire/**/*.class]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.io.support.PathMatchingResourcePatternResolver" timestamp="1472049516915" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Searching directory [D:\Git_Repository\REPOSITORY_JAVA\2.src\sapphire\target\classes\com\whalelan\sapphire\commen\util] for files matching pattern [D:/Git_Repository/REPOSITORY_JAVA/2.src/sapphire/target/classes/com/whalelan/sapphire/**/*.class]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.io.support.PathMatchingResourcePatternResolver" timestamp="1472049516915" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Searching directory [D:\Git_Repository\REPOSITORY_JAVA\2.src\sapphire\target\classes\com\whalelan\sapphire\commen\vo] for files matching pattern [D:/Git_Repository/REPOSITORY_JAVA/2.src/sapphire/target/classes/com/whalelan/sapphire/**/*.class]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.io.support.PathMatchingResourcePatternResolver" timestamp="1472049516915" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Searching directory [D:\Git_Repository\REPOSITORY_JAVA\2.src\sapphire\target\classes\com\whalelan\sapphire\feature] for files matching pattern [D:/Git_Repository/REPOSITORY_JAVA/2.src/sapphire/target/classes/com/whalelan/sapphire/**/*.class]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.io.support.PathMatchingResourcePatternResolver" timestamp="1472049516916" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Searching directory [D:\Git_Repository\REPOSITORY_JAVA\2.src\sapphire\target\classes\com\whalelan\sapphire\feature\zombie] for files matching pattern [D:/Git_Repository/REPOSITORY_JAVA/2.src/sapphire/target/classes/com/whalelan/sapphire/**/*.class]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.io.support.PathMatchingResourcePatternResolver" timestamp="1472049516916" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Resolved location pattern [classpath*:com/whalelan/sapphire/**/*.class] to resources [file [D:\Git_Repository\REPOSITORY_JAVA\2.src\sapphire\target\classes\com\whalelan\sapphire\commen\vo\ReqVo.class], file [D:\Git_Repository\REPOSITORY_JAVA\2.src\sapphire\target\classes\com\whalelan\sapphire\commen\vo\RespVo.class], file [D:\Git_Repository\REPOSITORY_JAVA\2.src\sapphire\target\classes\com\whalelan\sapphire\feature\zombie\ZombieController.class], file [D:\Git_Repository\REPOSITORY_JAVA\2.src\sapphire\target\classes\com\whalelan\sapphire\feature\zombie\ZombieService.class]]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.context.annotation.ClassPathBeanDefinitionScanner" timestamp="1472049516918" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Identified candidate component class: file [D:\Git_Repository\REPOSITORY_JAVA\2.src\sapphire\target\classes\com\whalelan\sapphire\feature\zombie\ZombieController.class]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.context.annotation.ClassPathBeanDefinitionScanner" timestamp="1472049516919" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Identified candidate component class: file [D:\Git_Repository\REPOSITORY_JAVA\2.src\sapphire\target\classes\com\whalelan\sapphire\feature\zombie\ZombieService.class]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.xml.BeanDefinitionParserDelegate" timestamp="1472049516983" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.view.InternalResourceViewResolver#0]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.xml.XmlBeanDefinitionReader" timestamp="1472049516984" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Loaded 28 bean definitions from location pattern [/WEB-INF/configs/spring/spring-mvc-servlet.xml]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.context.support.XmlWebApplicationContext" timestamp="1472049516984" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Bean factory for WebApplicationContext for namespace 'spring-mvc-servlet': org.springframework.beans.factory.support.DefaultListableBeanFactory@17e78587: defining beans [zombieController,zombieService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping,mvcCorsConfigurations,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter,mvcUriComponentsContributor,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,mvcResourceUrlProvider,org.springframework.web.servlet.handler.MappedInterceptor#1,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,mvcPathMatcher,mvcUrlPathHelper,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@29f9ef08]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049516985" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Registering scope 'request' with implementation [org.springframework.web.context.request.RequestScope@1e0c2c68]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049516985" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Registering scope 'session' with implementation [org.springframework.web.context.request.SessionScope@5c0e9711]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049516985" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Registering scope 'globalSession' with implementation [org.springframework.web.context.request.SessionScope@776efaaa]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049516985" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Registering scope 'application' with implementation [org.springframework.web.context.support.ServletContextScope@302236cb]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049516992" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049516993" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049516993" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049516993" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517043" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517044" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" timestamp="1472049517044" level="INFO" thread="localhost-startStop-1">
+<log4j:message><![CDATA[JSR-330 'javax.inject.Inject' annotation found and supported for autowiring]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517044" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517044" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517044" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517044" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517044" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517045" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517045" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517045" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517045" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517045" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517045" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517045" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517045" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517045" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517046" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517046" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517046" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517046" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.context.support.XmlWebApplicationContext" timestamp="1472049517046" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@31ad5659]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.context.support.XmlWebApplicationContext" timestamp="1472049517046" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@74179e5f]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.ui.context.support.UiApplicationContextUtils" timestamp="1472049517047" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@3196ac29]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517048" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@17e78587: defining beans [zombieController,zombieService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping,mvcCorsConfigurations,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter,mvcUriComponentsContributor,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,mvcResourceUrlProvider,org.springframework.web.servlet.handler.MappedInterceptor#1,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,mvcPathMatcher,mvcUrlPathHelper,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@29f9ef08]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517048" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'zombieController']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517048" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'zombieController']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.annotation.InjectionMetadata" timestamp="1472049517063" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Registered injected element on class [com.whalelan.sapphire.feature.zombie.ZombieController]: AutowiredFieldElement for com.whalelan.sapphire.feature.zombie.ZombieService com.whalelan.sapphire.feature.zombie.ZombieController.zombieService]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517063" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'zombieController' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.annotation.InjectionMetadata" timestamp="1472049517066" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Processing injected element of bean 'zombieController': AutowiredFieldElement for com.whalelan.sapphire.feature.zombie.ZombieService com.whalelan.sapphire.feature.zombie.ZombieController.zombieService]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517071" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'zombieService']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517071" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'zombieService']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517072" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'zombieService' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517072" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'zombieService']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" timestamp="1472049517072" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Autowiring by type from bean name 'zombieController' to bean named 'zombieService']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517072" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'zombieController']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517072" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'zombieService']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517072" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517073" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517073" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517073" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517073" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517073" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517073" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517074" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517074" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517074" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517074" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517075" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517075" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'mvcContentNegotiationManager']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517075" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'mvcContentNegotiationManager']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517076" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'mvcContentNegotiationManager' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517097" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Invoking afterPropertiesSet() on bean with name 'mvcContentNegotiationManager']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517099" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'mvcContentNegotiationManager']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517100" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517100" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517117" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517142" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'mvcContentNegotiationManager']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517142" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'mvcCorsConfigurations']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517143" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'mvcCorsConfigurations']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517144" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'mvcCorsConfigurations' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517151" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'mvcCorsConfigurations']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517153" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517153" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517157" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#7e5f39fd']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517158" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517158" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517158" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517163" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Invoking afterPropertiesSet() on bean with name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517223" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517232" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#7e5f39fd']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.BeanUtils" timestamp="1472049517247" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[No property editor [org.springframework.web.context.request.WebRequestInterceptorEditor] found for type org.springframework.web.context.request.WebRequestInterceptor according to 'Editor' suffix convention]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517248" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'org.springframework.web.servlet.handler.MappedInterceptor#0' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517251" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517252" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517252" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517252" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#5cc46ae7']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517252" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#27454f27']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517257" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#27454f27']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517260" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#5cc46ae7']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517261" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'org.springframework.web.servlet.handler.MappedInterceptor#1' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517262" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517262" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" timestamp="1472049517262" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Looking for request mappings in application context: WebApplicationContext for namespace 'spring-mvc-servlet': startup date [Wed Aug 24 22:38:36 CST 2016]; parent: Root WebApplicationContext]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" timestamp="1472049517284" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[2 request handler methods found on class com.whalelan.sapphire.feature.zombie.ZombieController: {public java.lang.String com.whalelan.sapphire.feature.zombie.ZombieController.starZombie()={[/zombie/startZombie],methods=[GET]}, public com.whalelan.sapphire.commen.vo.RespVo com.whalelan.sapphire.feature.zombie.ZombieController.zombieing(com.whalelan.sapphire.commen.vo.ReqVo,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)={[/zombie/zombieing],methods=[POST]}}]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" timestamp="1472049517285" level="INFO" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Mapped "{[/zombie/startZombie],methods=[GET]}" onto public java.lang.String com.whalelan.sapphire.feature.zombie.ZombieController.starZombie()]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" timestamp="1472049517286" level="INFO" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Mapped "{[/zombie/zombieing],methods=[POST]}" onto public com.whalelan.sapphire.commen.vo.RespVo com.whalelan.sapphire.feature.zombie.ZombieController.zombieing(com.whalelan.sapphire.commen.vo.ReqVo,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517289" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517289" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'mvcCorsConfigurations']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517289" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517289" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517289" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517728" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517740" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'mvcContentNegotiationManager']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517740" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#4d4996ef']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517751" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517752" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#4d4996ef']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517753" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#668b647']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517762" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#668b647']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517762" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#32e4fef4']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517766" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#32e4fef4']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517767" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#3bc9a654']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517771" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#3bc9a654']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517771" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#495656f4']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517775" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#495656f4']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517776" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#2a355b12']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517789" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#2a355b12']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517789" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#3ff8334d']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517800" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#3ff8334d']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517800" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#176f7677']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517801" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#33b8ea24']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517808" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Invoking afterPropertiesSet() on bean with name '(inner bean)#33b8ea24']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517815" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#33b8ea24']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517825" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#176f7677']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517826" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#6d3428c9']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517835" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#6d3428c9']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517835" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#bf06f96']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517843" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#bf06f96']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517845" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter" timestamp="1472049517845" level="INFO" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-mvc-servlet': startup date [Wed Aug 24 22:38:36 CST 2016]; parent: Root WebApplicationContext]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517882" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517882" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'mvcUriComponentsContributor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517883" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'mvcUriComponentsContributor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517883" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'mvcUriComponentsContributor' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517886" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#60a0e411']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517895" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'mvcContentNegotiationManager']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517895" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#4d4996ef#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517896" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517896" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#4d4996ef#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517896" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#668b647#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517897" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#668b647#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517897" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#32e4fef4#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517898" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#32e4fef4#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517898" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#3bc9a654#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517899" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#3bc9a654#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517899" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#495656f4#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517900" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#495656f4#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517900" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#2a355b12#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517905" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#2a355b12#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517906" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#3ff8334d#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517908" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#3ff8334d#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517908" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#176f7677#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517909" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#33b8ea24#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517909" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Invoking afterPropertiesSet() on bean with name '(inner bean)#33b8ea24#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517913" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#33b8ea24#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517913" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#176f7677#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517914" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#6d3428c9#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517914" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#6d3428c9#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517914" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#bf06f96#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517915" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#bf06f96#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517915" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Invoking afterPropertiesSet() on bean with name '(inner bean)#60a0e411']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter" timestamp="1472049517915" level="INFO" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-mvc-servlet': startup date [Wed Aug 24 22:38:36 CST 2016]; parent: Root WebApplicationContext]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517917" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning eagerly cached instance of singleton bean 'mvcUriComponentsContributor' that is not fully initialized yet - a consequence of a circular reference]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517918" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#60a0e411']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517918" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517918" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Invoking afterPropertiesSet() on bean with name 'mvcUriComponentsContributor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517919" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'mvcUriComponentsContributor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517919" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517919" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517919" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517926" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517935" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'mvcContentNegotiationManager']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517935" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#668b647#2']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517936" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#668b647#2']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517936" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#32e4fef4#2']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517937" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#32e4fef4#2']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517938" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#3bc9a654#2']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517938" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#3bc9a654#2']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517938" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#495656f4#2']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517940" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#495656f4#2']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517940" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#2a355b12#2']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517946" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#2a355b12#2']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517947" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#3ff8334d#2']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517947" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#3ff8334d#2']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517948" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#176f7677#2']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517948" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#33b8ea24#2']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517948" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Invoking afterPropertiesSet() on bean with name '(inner bean)#33b8ea24#2']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517952" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#33b8ea24#2']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517953" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#176f7677#2']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517953" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean '(inner bean)#78d082df']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517954" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean '(inner bean)#78d082df']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517954" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver" timestamp="1472049517955" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Looking for exception mappings: WebApplicationContext for namespace 'spring-mvc-servlet': startup date [Wed Aug 24 22:38:36 CST 2016]; parent: Root WebApplicationContext]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517956" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517956" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517956" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517957" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517960" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517960" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517960" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517961" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517963" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517964" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517964" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517965" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517974" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'mvcCorsConfigurations']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517974" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517974" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517975" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Looking for URL mappings in application context: WebApplicationContext for namespace 'spring-mvc-servlet': startup date [Wed Aug 24 22:38:36 CST 2016]; parent: Root WebApplicationContext]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517975" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'zombieController': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517975" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'zombieService': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517975" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517975" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517975" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517975" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517976" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'org.springframework.context.event.internalEventListenerProcessor': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517976" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'org.springframework.context.event.internalEventListenerFactory': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517976" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'mvcContentNegotiationManager': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517976" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517976" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'mvcCorsConfigurations': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517976" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517976" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517976" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'mvcUriComponentsContributor': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517976" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#0': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517976" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517977" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517977" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517977" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517977" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517977" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517977" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'mvcResourceUrlProvider': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517977" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#1': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517977" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517977" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'mvcPathMatcher': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517977" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'mvcUrlPathHelper': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517977" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517977" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'org.springframework.web.servlet.view.InternalResourceViewResolver#0': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517977" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517977" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517977" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'environment': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517977" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'systemProperties': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517978" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'systemEnvironment': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517978" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'servletConfig': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517978" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517978" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'messageSource': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" timestamp="1472049517978" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Rejected bean name 'applicationEventMulticaster': no URL paths identified]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517978" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517978" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517978" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517978" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517981" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517981" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517981" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517981" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517983" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517983" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'mvcResourceUrlProvider']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517983" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'mvcResourceUrlProvider']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517984" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'mvcResourceUrlProvider' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517984" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'mvcResourceUrlProvider']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517984" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517984" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517984" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517988" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517992" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517993" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517993" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'mvcPathMatcher']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517993" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'mvcPathMatcher']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517993" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'mvcPathMatcher' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517996" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'mvcPathMatcher']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517996" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'mvcUrlPathHelper']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517996" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'mvcUrlPathHelper']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517996" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'mvcUrlPathHelper' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517999" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'mvcUrlPathHelper']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517999" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517999" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049517999" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518006" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'mvcPathMatcher']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518006" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'mvcUrlPathHelper']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518007" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'mvcCorsConfigurations']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518008" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518008" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518008" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping" timestamp="1472049518008" level="INFO" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518008" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518008" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518008" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518016" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Eagerly caching bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0' to allow for resolving potential circular references]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518024" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518024" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518024" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518024" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.context.support.XmlWebApplicationContext" timestamp="1472049518094" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@766e0e81]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518094" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'lifecycleProcessor']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518096" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'mvcResourceUrlProvider']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.DispatcherServlet" timestamp="1472049518097" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518098" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518101" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.DispatcherServlet" timestamp="1472049518101" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@fa7bfa7]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518102" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518108" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.DispatcherServlet" timestamp="1472049518108" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@481b4fc1]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518108" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518108" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518108" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518108" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518109" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518109" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518149" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518149" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518149" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518150" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518153" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.DispatcherServlet" timestamp="1472049518153" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3a3a2cb3]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518153" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518156" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518163" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Finished creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.DispatcherServlet" timestamp="1472049518163" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@22a88cc7]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.resource.ResourceUrlProvider" timestamp="1472049518163" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Looking for resource handler mappings]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518163" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.resource.ResourceUrlProvider" timestamp="1472049518163" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Found resource handler mapping: URL pattern="/static/**", locations=[class path resource [static/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@71d76248]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.resource.ResourceUrlProvider" timestamp="1472049518164" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Looking for resource handler mappings]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.beans.factory.support.DefaultListableBeanFactory" timestamp="1472049518164" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0']]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.resource.ResourceUrlProvider" timestamp="1472049518164" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Found resource handler mapping: URL pattern="/static/**", locations=[class path resource [static/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@71d76248]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.env.PropertySourcesPropertyResolver" timestamp="1472049518164" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Searching for key 'spring.liveBeansView.mbeanDomain' in [servletConfigInitParams]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.env.PropertySourcesPropertyResolver" timestamp="1472049518164" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Searching for key 'spring.liveBeansView.mbeanDomain' in [servletContextInitParams]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.env.PropertySourcesPropertyResolver" timestamp="1472049518164" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Searching for key 'spring.liveBeansView.mbeanDomain' in [jndiProperties]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.jndi.JndiTemplate" timestamp="1472049518164" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.jndi.JndiLocatorDelegate" timestamp="1472049518164" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.jndi.JndiTemplate" timestamp="1472049518165" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.jndi.JndiPropertySource" timestamp="1472049518165" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.env.PropertySourcesPropertyResolver" timestamp="1472049518165" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.env.PropertySourcesPropertyResolver" timestamp="1472049518165" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.core.env.PropertySourcesPropertyResolver" timestamp="1472049518165" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.DispatcherServlet" timestamp="1472049518165" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Published WebApplicationContext of servlet 'spring-mvc' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.spring-mvc]]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.DispatcherServlet" timestamp="1472049518165" level="INFO" thread="localhost-startStop-1">
+<log4j:message><![CDATA[FrameworkServlet 'spring-mvc': initialization completed in 1310 ms]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.springframework.web.servlet.DispatcherServlet" timestamp="1472049518165" level="DEBUG" thread="localhost-startStop-1">
+<log4j:message><![CDATA[Servlet 'spring-mvc' configured successfully]]></log4j:message>
+</log4j:event>
+
