@@ -21,22 +21,20 @@ public class MyWebSocketHander implements WebSocketHandler
 	{
 		System.out.println("链接成功......");
 		users.add(session);
-		String userName = (String) session.getAttributes().get("WEBSOCKET_USERNAME");
-		if (userName != null)
-		{
-			// 查询未读消息
-			int count = 5;
-			session.sendMessage(new TextMessage(count + ""));
-			session.sendMessage(new TextMessage("connect"));
-			session.sendMessage(new TextMessage("new_msg"));
-		}
+//		String userName = (String) session.getAttributes().get("WEBSOCKET_USERNAME");
+//		if (userName != null)
+//		{
+//			// 查询未读消息
+//			session.sendMessage(new TextMessage("connect"));
+//			session.sendMessage(new TextMessage("new_msg"));
+//		}
 	}
 
 	@Override
 	public void handleMessage(WebSocketSession session, WebSocketMessage<?> message) throws Exception
 	{
-		sendMessageToUsers(new TextMessage("这是一条广播消息！"));
-		// sendMessageToUsers(new TextMessage(message.getPayload() + ""));
+		//sendMessageToUsers(new TextMessage("这是一条广播消息！"));
+		sendMessageToUsers(new TextMessage(message.getPayload() + ""));
 	}
 
 	@Override

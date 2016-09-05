@@ -13,7 +13,6 @@ public class WebSocketConfig implements WebSocketConfigurer
 	@Override
 	public void registerWebSocketHandlers(WebSocketHandlerRegistry registry)
 	{
-		registry.addHandler(new MyWebSocketHander(),"/echo").addInterceptors(new MyHandshakeInterceptor()); //支持websocket 的访问链接
         registry.addHandler(new MyWebSocketHander(),"/sockjs/echo").addInterceptors(new MyHandshakeInterceptor()).setAllowedOrigins("*").withSockJS(); //不支持websocket的访问链接
 	}
 
