@@ -14,6 +14,10 @@
 		<property name="format_sql">true</property>
 		<property name="hbm2ddl.auto">update</property> <!--create,update -->
 
-		<mapping resource="Student.hbm.xml" />
+		<!-- 
+		<mapping resource="com/whalelan/sapphire/commen/wedget/hibernate/Student.hbm.xml" />
+		 -->
+		 
+		<mapping resource="com/whalelan/sapphire/commen/wedget/hibernate/Student.java" /> 
 	</session-factory>
 </hibernate-configuration>

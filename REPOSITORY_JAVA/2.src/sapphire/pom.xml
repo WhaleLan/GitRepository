@@ -119,13 +119,19 @@
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
-			<version>5.2.2.Final</version>
+			<version>4.2.4.Final</version>
 		</dependency>
 		<!-- mysql jdbc -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.38</version>
+		</dependency>
+		<!-- Hibernate 注解 -->
+		<dependency>
+			<groupId>javax.persistence</groupId>
+			<artifactId>persistence-api</artifactId>
+			<version>1.0</version>
 		</dependency>
 	</dependencies>
 	<build>

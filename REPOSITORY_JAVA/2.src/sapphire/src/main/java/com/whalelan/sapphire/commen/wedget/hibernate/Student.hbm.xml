@@ -6,7 +6,7 @@
     <class name="com.whalelan.sapphire.commen.wedget.hibernate.Student" table="STUDENT">
         <id name="sid" type="int">
             <column name="SID" />
-            <generator class="assigned" />
+            <generator class="increment" />
         </id>
         <property name="name" type="java.lang.String">
             <column name="NAME" />

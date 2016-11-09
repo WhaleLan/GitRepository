@@ -1,115 +1,54 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd">
+        "http://www.w3.org/TR/html4/strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script src="js/lib/jquery/jquery-2.1.4.min.js"></script>
-<script src="js/lib/sockjs/sockjs.min.js"></script>
-<title>App</title>
-<script type="text/javascript">
-	var CONTEXT_HOST;
-	var CONTEXT_PATH;
-	var CONTEXT_PROTOCOL = "http://";
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- css -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- lib -->
+    <script src="js/lib/jquery/jquery-2.1.4.min.js"></script>
+    <script src="js/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="js/lib/sockjs/sockjs.min.js"></script>
+    <!-- compoment -->
+    <script type="text/javascript" src="js/compoment/ajax/ajax.js"></script>
+    <script type="text/javascript" src="js/compoment/websocket/websocket.js"></script>
+    <script type="text/javascript" src="js/compoment/string/string.js"></script>
+    <!-- moudule -->
+    <script type="text/javascript" src="js/core/moduleBus/module_bus.js"></script>
+    <script type="text/javascript" src="js/module/mainPage/main_page.js"></script>
+    <script type="text/javascript" src="js/module/system/system.js"></script>
 
-	 //  context
-	 CONTEXT_HOST = window.location.host;
-	 var pathName = document.location.pathname;
-	 var index = pathName.substr(1).indexOf("/");
-	 CONTEXT_PATH = pathName.substr(0,index+1);
+    <title>Sapphire</title>
+    <script type="text/javascript">
+        var CONTEXT_HOST;
+        var CONTEXT_PATH;
+        var CONTEXT_PROTOCOL = "http://";
 
-	 console.log("CONTEXT_HOST : "  + CONTEXT_HOST);
-	 console.log("CONTEXT_PATH : "  + CONTEXT_PATH);
-	 console.log("CONTEXT_PROTOCOL : "  + CONTEXT_PROTOCOL);
-	 
-	$(document).ready(function() {
+        //  context
+        CONTEXT_HOST = window.location.host;
+        var pathName = document.location.pathname;
+        var index = pathName.substr(1).indexOf("/");
+        CONTEXT_PATH = pathName.substr(0, index + 1);
 
-		 // websocket
-		 var websocket = new SockJS(CONTEXT_PROTOCOL + CONTEXT_HOST + CONTEXT_PATH + "/sockjs/echo");
+        console.log("CONTEXT_HOST : " + CONTEXT_HOST);
+        console.log("CONTEXT_PATH : " + CONTEXT_PATH);
+        console.log("CONTEXT_PROTOCOL : " + CONTEXT_PROTOCOL);
 
-         websocket.onopen = function (evnt) {
-             $("#tou").html("链接服务器成功!")
-         };
-         websocket.onmessage = function (evnt) {
-             $("#msg").html($("#msg").html() + "<br/>" + evnt.data);
-         };
-         websocket.onerror = function (evnt) {
-         };
-         websocket.onclose = function (evnt) {
-             $("#tou").html("与服务器断开了链接!")
-         }
-         $("#send").bind('click', function() {
-             send();
-         });
-         function send(){
-             if (websocket != null) {
-                 var message = document.getElementById('message').value;
-                 websocket.send(message);
-             } else {
-                 alert('未与服务器链接.');
-             }
-         }
+        // bus
+        var MODULE_BUS = new $.ModuleBus();
 
-		// ajax
-		var params = {
-			clientName : "lanjing",
-			clientId : "123456"
-		}
+        $(document).ready(function () {
+            // 1. init bus
+            MODULE_BUS.init();
 
-		$("#testPost").click(function() {
-			$.ajax({
-				// 提交数据的类型 POST GET
-				type : "post",
-				// 提交的网址
-				url : CONTEXT_PATH + "/zombie/zombieing",
-				// 提交的数据
-				data : JSON.stringify(params),
-				// 提交的数据类型
-				contentType : "application/json;charset=UTF-8",
-				// 返回数据的格式
-				datatype : "json",// "xml", "html", "script", "json", "jsonp",
-				// "text".
-				// 在请求之前调用的函数
-				beforeSend : function() {
-					console.log("beforeSend");
-				},
-				// 成功返回之后调用的函数
-				success : function(result) {
-					console.log("success");
-					console.log(result);
-				},
-				// 调用执行后调用的函数
-				complete : function(XMLHttpRequest, textStatus) {
-					console.log("complete");
-				},
-				// 调用出错执行的函数
-				error : function() {
-					console.log("system error!");
-				}
-			});
-		});
-	});
-</script>
+            // 2. load all modules
+            MODULE_BUS.loadModules();
+
+        });
+    </script>
 </head>
 <body>
-	<h2>MVC_TEST : Hello World!</h2>
-	<button id="testPost">POST</button>
-	<a href="/zombie/startZombie">helloWorld</a>
 
-
-	<div class="page-header" id="tou">webSocket及时聊天Demo程序</div>
-	<div class="well" id="msg"></div>
-	<div class="col-lg">
-		<div class="input-group">
-			<input type="text" class="form-control" placeholder="发送信息..."
-				id="message"> <span class="input-group-btn">
-				<button class="btn btn-default" type="button" id="send">发送</button>
-			</span>
-		</div>
-		<!-- /input-group -->
-	</div>
-	<!-- /.col-lg-6 -->
-	</div>
-	<!-- /.row -->
 </body>
 </html>
