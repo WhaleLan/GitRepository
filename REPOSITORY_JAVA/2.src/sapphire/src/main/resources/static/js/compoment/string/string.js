@@ -25,6 +25,21 @@
         };
 
         // endregion
+
+        // region encode
+
+        this.encode = function () {
+            if (arguments.length == 0) {
+                return "";
+            }
+            var str = arguments[0];
+            for (var i = 1; i < arguments.length; i++) {
+                str += ("_" + arguments[i]);
+            }
+            return str;
+        };
+
+        // endregion
     };
 })(jQuery);
 var String = new $.String();

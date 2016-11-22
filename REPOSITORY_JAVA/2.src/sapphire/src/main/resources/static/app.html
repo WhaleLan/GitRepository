@@ -6,6 +6,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- css -->
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/body/sapphire-body.css" rel="stylesheet">
+    <link href="css/login/sapphire-login.css" rel="stylesheet">
+    <link href="css/registry/registry.css" rel="stylesheet">
     <!-- lib -->
     <script src="js/lib/jquery/jquery-2.1.4.min.js"></script>
     <script src="js/lib/bootstrap/bootstrap.min.js"></script>
@@ -18,6 +21,10 @@
     <script type="text/javascript" src="js/core/moduleBus/module_bus.js"></script>
     <script type="text/javascript" src="js/module/mainPage/main_page.js"></script>
     <script type="text/javascript" src="js/module/system/system.js"></script>
+    <script type="text/javascript" src="js/module/userInfo/userInfo.js"></script>
+    <script type="text/javascript" src="js/module/login/login.js"></script>
+    <script type="text/javascript" src="js/module/logout/logout.js"></script>
+    <script type="text/javascript" src="js/module/registry/registry.js"></script>
 
     <title>Sapphire</title>
     <script type="text/javascript">
@@ -39,16 +46,66 @@
         var MODULE_BUS = new $.ModuleBus();
 
         $(document).ready(function () {
-            // 1. init bus
-            MODULE_BUS.init();
+//            // 1. init bus
+//            MODULE_BUS.init();
+//
+//            // 2. load all modules
+//            MODULE_BUS.loadModules();
+//
+//            // 3. login page
+//            MODULE_BUS.getModule("MainPage").activePage("sapphire_login_page");
+//
+            //结合JSON.stringify使用更强大
+//            var person = {'name': 'rainman', 'age': 24};
+//            localStorage.setItem("me", JSON.stringify(person));
+            var person = JSON.parse(localStorage.getItem('me'));    // 'rainman'
+            console.log(person);
 
-            // 2. load all modules
-            MODULE_BUS.loadModules();
+            //创建数据库
+            var db = openDatabase("users", "1.0", "用户表", 1024 * 1024);
+//            if(!db){
+//                alert("Failed to connect to database.");
+//            } else {
+//                alert("connect to database 'K'.");
+//            }
+//
+//            // 创建表
+//            db.transaction( function(tx) {
+//                tx.executeSql(
+//                        "CREATE TABLE IF NOT EXISTS users (id REAL UNIQUE, name TEXT)",
+//                        [],
+//                        function(){ alert('创建users表成功'); },
+//                        function(tx, error){ alert('创建users表失败:' + error.message); }
+//                );
+//            });
+
+//            // 插入数据
+//            db.transaction(function(tx) {
+//                tx.executeSql(
+//                        "INSERT INTO users (id, name) values(?, ?)",
+//                        [Math.random(), 'space'],
+//                        function(){ alert('插入数据成功'); },
+//                        function(tx, error){ alert('插入数据失败: ' + error.message);}
+//                );
+//            });
+
+
+            db.transaction(function(tx) {
+                tx.executeSql(
+                        "INSERT INTO users (id, name) values(?, ?)",
+                        [Math.random(), 'lanjing'],
+                        function(){ alert('插入数据成功'); },
+                        function(tx, error){ alert('插入数据失败: ' + error.message);}
+                );
+            });
+
 
         });
     </script>
 </head>
-<body>
 
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" id="sapphire_head"></nav>
+<div class="container-fluid" id="sapphire_body"></div>
 </body>
 </html>

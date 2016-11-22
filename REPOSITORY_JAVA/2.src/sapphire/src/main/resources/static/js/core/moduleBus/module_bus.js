@@ -18,7 +18,11 @@
             // 从配置文件中读出 并初始化modules
             modules = {
                 "MainPage": new $.MainPage(),
-                "System" : new $.System()
+                "System" : new $.System(),
+                "UserInfo" : new $.UserInfo(),
+                "Login" : new $.Login(),
+                "Logout" : new $.Logout(),
+                "Registry" : new $.Registry()
             }
         };
 
