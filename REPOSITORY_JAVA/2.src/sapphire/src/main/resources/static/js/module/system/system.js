@@ -15,6 +15,8 @@
         this.load = function () {
 
             // 1. init context, websocket ...
+            SapphireWebSql.init();
+            SapphireLocalStorage.init();
 
             // 2. invoke other modules' load
 

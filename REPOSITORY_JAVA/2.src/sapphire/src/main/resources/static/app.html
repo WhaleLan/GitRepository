@@ -17,6 +17,8 @@
     <script type="text/javascript" src="js/compoment/ajax/ajax.js"></script>
     <script type="text/javascript" src="js/compoment/websocket/websocket.js"></script>
     <script type="text/javascript" src="js/compoment/string/string.js"></script>
+    <script type="text/javascript" src="js/compoment/websql/websql.js"></script>
+    <script type="text/javascript" src="js/compoment/localstorage/localstorage.js"></script>
     <!-- moudule -->
     <script type="text/javascript" src="js/core/moduleBus/module_bus.js"></script>
     <script type="text/javascript" src="js/module/mainPage/main_page.js"></script>
@@ -46,60 +48,14 @@
         var MODULE_BUS = new $.ModuleBus();
 
         $(document).ready(function () {
-//            // 1. init bus
-//            MODULE_BUS.init();
-//
-//            // 2. load all modules
-//            MODULE_BUS.loadModules();
-//
-//            // 3. login page
-//            MODULE_BUS.getModule("MainPage").activePage("sapphire_login_page");
-//
-            //结合JSON.stringify使用更强大
-//            var person = {'name': 'rainman', 'age': 24};
-//            localStorage.setItem("me", JSON.stringify(person));
-            var person = JSON.parse(localStorage.getItem('me'));    // 'rainman'
-            console.log(person);
+            // 1. init bus
+            MODULE_BUS.init();
 
-            //创建数据库
-            var db = openDatabase("users", "1.0", "用户表", 1024 * 1024);
-//            if(!db){
-//                alert("Failed to connect to database.");
-//            } else {
-//                alert("connect to database 'K'.");
-//            }
-//
-//            // 创建表
-//            db.transaction( function(tx) {
-//                tx.executeSql(
-//                        "CREATE TABLE IF NOT EXISTS users (id REAL UNIQUE, name TEXT)",
-//                        [],
-//                        function(){ alert('创建users表成功'); },
-//                        function(tx, error){ alert('创建users表失败:' + error.message); }
-//                );
-//            });
+            // 2. load all modules
+            MODULE_BUS.loadModules();
 
-//            // 插入数据
-//            db.transaction(function(tx) {
-//                tx.executeSql(
-//                        "INSERT INTO users (id, name) values(?, ?)",
-//                        [Math.random(), 'space'],
-//                        function(){ alert('插入数据成功'); },
-//                        function(tx, error){ alert('插入数据失败: ' + error.message);}
-//                );
-//            });
-
-
-            db.transaction(function(tx) {
-                tx.executeSql(
-                        "INSERT INTO users (id, name) values(?, ?)",
-                        [Math.random(), 'lanjing'],
-                        function(){ alert('插入数据成功'); },
-                        function(tx, error){ alert('插入数据失败: ' + error.message);}
-                );
-            });
-
-
+            // 3. login page
+            MODULE_BUS.getModule("MainPage").activePage("sapphire_login_page");
         });
     </script>
 </head>

@@ -13,6 +13,12 @@
         var passwordInputId = String.encode(self.MOUDLE_NAME, "MODULE", "passwordInputId");
         var confirmBtnId = String.encode(self.MOUDLE_NAME, "MODULE", "confirmBtnId");
 
+        var userInfo = {
+            userName: "",
+            password: "",
+            email: ""
+        };
+
         // endregion
 
         // region load
@@ -60,6 +66,50 @@
             MODULE_BUS.getModule("MainPage").registry4Body("sapphire_registry_page", strHtml);
 
             // 3. band event
+            $("#" + confirmBtnId).click(function () {
+                _registryUser();
+            });
+        };
+
+        // endregion
+
+        // region _registryUser
+
+        var _registryUser = function () {
+            _getUserInfo(function (userInfo) {
+                _validataUserInfo(userInfo, function (userInfo) {
+                    _post4RegistryUser(userInfo, function () {
+                        _post4RegistryOk();
+                    }, function (postFailMsg) {
+                        _infoMsg(postFailMsg);
+                    });
+                }, function (valFailMsg) {
+                    _infoMsg(valFailMsg);
+                });
+            });
+        };
+
+        var _getUserInfo = function (oAfterGetUserInfoCallback) {
+
+        };
+
+        var _validataUserInfo = function (userInfo, oValSuccessCallback, oValFailedCallback) {
+
+        };
+
+        var _post4RegistryUser = function (userInfo, post4RegistryOkCallback, post4RegistryPokCallback) {
+
+        };
+
+        var _infoMsg = function (strMsg) {
+
+        };
+
+        // endregion
+
+        // region _post4RegistryOk
+
+        var _post4RegistryOk = function () {
 
         };
 
