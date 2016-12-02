@@ -27,7 +27,7 @@
             // 创建表
             sapphireDB.transaction(function (tx) {
                 tx.executeSql(
-                    "CREATE TABLE IF NOT EXISTS users " +
+                    "CREATE TABLE IF NOT EXISTS tbl_users " +
                     "(" +
                     "id INT AUTO_INCREMENT PRIMARY KEY, " +
                     "username VARCHAR(32) NOT NULL ,  " +
@@ -50,10 +50,10 @@
         // region excuteSql
 
         this.excuteSql = function (strSql, args, successInfo, failedInfo) {
-            db.transaction(function (tx) {
+            sapphireDB.transaction(function (tx) {
                 tx.executeSql(
                     strSql,
-                    [args],
+                    args,
                     function () {
                         console.log(successInfo);
                     },
