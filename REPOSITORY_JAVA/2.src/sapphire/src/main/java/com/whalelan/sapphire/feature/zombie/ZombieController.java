@@ -47,7 +47,7 @@ public class ZombieController
 			throws ServletException, IOException
 	{
 		request.setAttribute("msg", "帐号不能为空");
-		request.getRequestDispatcher("/view/success.jsp").forward(request, response);
+		request.getRequestDispatcher("/WEB-INF/view/success.jsp").forward(request, response);
 		return;
 		// System.out.println("starZombie");
 		// return "success";

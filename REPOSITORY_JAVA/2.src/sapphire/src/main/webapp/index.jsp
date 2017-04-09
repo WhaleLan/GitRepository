@@ -5,12 +5,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>WhaleLan</title>
+<!-- 
 <script type="text/javascript">
     var contextPath = "<%=request.getContextPath()%>";
 	window.location.href = contextPath + "/static/app.html";
 </script>
+-->
 </head>
 <body>
 	<h2>index.jsp</h2>
+	<jsp:forward page="*.jsp">
+		<jsp:param name="value" value="value" />
+	</jsp:forward>
 </body>
 </html>
