@@ -6,18 +6,18 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>WhaleLan</title>
-<!-- 
+
 <script type="text/javascript">
     var contextPath = "<%=request.getContextPath()%>";
 	window.location.href = contextPath + "/static/app.html";
 </script>
--->
 
+<!-- 
 <script type="text/javascript">
     var contextPath = "<%=request.getContextPath()%>";
 	window.location.href = contextPath + "/zombie/startZombie_1";
 </script>
-
+-->
 
 </head>
 <body>
